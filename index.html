@@ -12,6 +12,9 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
     crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" 
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
+    crossorigin="anonymous">
 </head>
 <body>
   <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -27,6 +30,13 @@
     </div>
   </nav>
   <article class="container mt-3">
+    <div class="row d-none d-sm-block">
+      <div class="col-12">
+        <div class="alert alert-warning">
+        <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
+        </div>
+      </div>
+    </div>
     <!-- Callout -->
     <div class="row">
       <div class="col-12">      
@@ -51,16 +61,30 @@
       </div>
       <div class="row">
         <div class="col-12 col-md-6">
-          <blockquote class="blockquote">
-            <p>I've been introduced to more than 10 great international whiskys I never knew about.</p>
-            <p>- Jane Doe</p>
-          </blockquote>
+          <div class="media">
+            <div class="d-none d-sm-block">
+              <img src="images/girl-image.png" alt="Image of a girl" class="rounded-circle mr-3" height="100" width="100">
+            </div>
+              <div class="media-body">
+              <blockquote class="blockquote">
+                <p>I've been introduced to more than 10 great international whiskys I never knew about.</p>
+                <p>- Jane Doe</p>
+              </blockquote>
+            </div>
+          </div>
         </div>
         <div class="col-12 col-md-6">
-          <blockquote class="blockquote">
-            <p>I haven't been sober for months!</p>
-            <p>- Jane Doe</p>
-          </blockquote>
+          <div class="media">
+            <div class="d-none d-sm-block">
+              <img src="images/guy-image.png" alt="Image of a guy" class="rounded-circle mr-3" height="100" width="100">
+            </div>
+              <div class="media-body">
+              <blockquote class="blockquote">
+                <p>I haven't been sober for months!</p>
+                <p>- Jane Doe</p>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -76,7 +100,7 @@
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="feature">
-            <h3>Feature 1</h3>
+            <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
@@ -86,7 +110,7 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
           <div class="feature">
-            <h3>Feature 2</h3>
+            <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
@@ -96,7 +120,7 @@
         </div>
         <div class="col-12 d-md-none d-lg-block col-lg-4">
           <div class="feature">
-            <h3>Feature 3</h3>
+            <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
