@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" 
   integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" 
   crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -22,7 +24,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
         <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink"
         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Whiskys</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Irish</a>
@@ -39,30 +41,35 @@
       <a href="/login">Sign In / Sign Up</a>
     </div>
   </nav>
-  <article class="container mt-3">
-    <div class="row d-none d-sm-block">
-      <div class="col-12">
-        <div class="alert alert-warning">
-        <strong>Sale now on!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
-        </div>
-      </div>
-    </div>
-    <!-- Callout -->
+  <!-- <div class="container alert-container"> -->
+  <!--  <div class="row d-none d-sm-block"> -->
+  <!--    <div class="col-12"> -->
+  <!--      <div class="alert alert-warning"> -->
+  <!--      <strong>Sale now on!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a> -->
+  <!--      </div> -->
+  <!--    </div> -->
+  <!--  </div> -->
+  <!-- </div> -->
+  <!-- Callout -->
+  <div class="container-fluid callout-container">
+    <div class="opaque-overlay">&nbsp;</div>
     <div class="row">
       <div class="col-12">      
         <section class="callout jumbotron text-center">
-          <h1>The finest whiskys delivered to your doorstep.</h1>
+          <h1 class="jumbotron-header">The finest whiskys delivered to your doorstep.</h1>
+          <hr class="block-divider block-divider--orange">
           <p class="lead">Sign up today to start receiving the world's best whiskys every month. 
           <s class="d-none d-sm-inline">€19.99</s> <span class="d-inline d-sm-none"><br></span><strong><mark>First one is free!</mark></strong></p>
-          <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
+          <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign up!</button>
           <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly.
           </small></p>
         </section>
       </div>
     </div>
-    <!-- /.callout -->
-    <hr>
-    <!-- Quotes -->
+  </div>
+  <!-- /.callout -->    
+  <!-- Quotes -->
+  <div class="container quotes-container">
     <section class="quotes">
       <div class="row">
         <div class="col-12 my-5">
@@ -75,32 +82,33 @@
             <div class="d-none d-sm-block">
               <img src="images/girl-image.png" alt="Image of a girl" class="rounded-circle mr-3" height="100" width="100">
             </div>
-              <div class="media-body">
-              <blockquote class="blockquote">
-                <p>I've been introduced to more than 10 great international whiskys I never knew about.</p>
-                <p>- Jane Doe</p>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="media">
-            <div class="d-none d-sm-block">
-              <img src="images/guy-image.png" alt="Image of a guy" class="rounded-circle mr-3" height="100" width="100">
-            </div>
-              <div class="media-body">
-              <blockquote class="blockquote">
-                <p>I haven't been sober for months!</p>
-                <p>- Jane Doe</p>
-              </blockquote>
-            </div>
+          <div class="media-body">
+            <blockquote class="blockquote">
+              <p>I've been introduced to more than 10 great international whiskys I never knew about.</p>
+              <p>- Jane Doe</p>
+            </blockquote>
           </div>
         </div>
       </div>
+      <div class="col-12 col-md-6">
+        <div class="media">
+          <div class="d-none d-sm-block">
+            <img src="images/guy-image.png" alt="Image of a guy" class="rounded-circle mr-3" height="100" width="100">
+          </div>
+          <div class="media-body">
+          <blockquote class="blockquote">
+          <p>I haven't been sober for months!</p>
+          <p>- Jane Doe</p>
+          </blockquote>
+          </div>
+        </div>
+      </div>
+      </div>
     </section>
-    <!-- /.quotes -->
-    <hr>
-    <!-- Features -->
+  </div>
+  <!-- /.quotes -->    
+  <!-- Features -->
+  <div class="container features-container">
     <section class="features">
       <div class="row">
         <div class="col-12 my-5">
@@ -140,9 +148,10 @@
         </div>
       </div>
     </section>
-    <!-- /. features -->
-    <hr>
-    <!-- Monthly Favourites -->
+  </div>
+  <!-- /. features -->
+  <!-- Monthly Favourites -->
+  <div class="container favourites-container">
     <section class="monthly_favourites">
       <h2 class="text-uppercase">Monthly Favourites:</h2>
       <table class="table table-striped">
@@ -157,10 +166,10 @@
           <tr><td>Mars Kasei</td><td>Japan</td></tr>
         </tbody>
       </table>
-    <p>Source as of July 2020: <a href="https://www.standard.co.uk/shopping/esbest/food-drink/best-whisky-to-buy-a3731531.html">https://www.standard.co.uk/shopping/esbest/food-drink/best-whisky-to-buy-a3731531.html</a></p>
+     <p>Source as of July 2020: <a href="https://www.standard.co.uk/shopping/esbest/food-drink/best-whisky-to-buy-a3731531.html">https://www.standard.co.uk/shopping/esbest/food-drink/best-whisky-to-buy-a3731531.html</a></p>
     </section>
-    <!-- /.monthly favourites -->
-  </article>
+  </div>
+  <!-- /.monthly favourites -->
   <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
